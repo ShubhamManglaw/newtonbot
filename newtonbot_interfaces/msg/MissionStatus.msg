@@ -1,0 +1,5 @@
+uint8 mission_state
+uint8 current_segment
+uint8 total_segments
+float32 completion_percentage
+builtin_interfaces/Time stamp

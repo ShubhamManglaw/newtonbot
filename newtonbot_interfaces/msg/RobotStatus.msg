@@ -1,0 +1,6 @@
+uint8 robot_state
+bool mission_active
+float32 linear_velocity
+float32 angular_velocity
+float32 battery_percentage
+builtin_interfaces/Time stamp

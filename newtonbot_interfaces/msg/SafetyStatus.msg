@@ -1,0 +1,3 @@
+uint8 safety_state
+float32 obstacle_distance
+builtin_interfaces/Time stamp
