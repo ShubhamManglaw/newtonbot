@@ -13,12 +13,19 @@ find_package(builtin_interfaces REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/MissionStatus.msg"
+
+  "msg/MissionCommand.msg"
+  "msg/MissionProgress.msg"
+  "msg/MotionStatus.msg"
   "msg/RobotStatus.msg"
-  "msg/Safety.msg"
-  "srv/MissionControl.srv"
+  "msg/SafetyStatus.msg"
+
+  "srv/StartMission.srv"
+  "srv/StopMission.srv"
+  "srv/ResetMission.srv"
   "srv/GetRobotStatus.srv"
-DEPENDENCIES
+
+  DEPENDENCIES
     builtin_interfaces
 )
 if(BUILD_TESTING)
